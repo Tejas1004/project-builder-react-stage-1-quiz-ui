@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import './Resultcompo.css';
 /*import {CheckCircleOutlineOutlinedIcon} from '@mui/icons-material/CheckCircleOutlineOutlined';*/
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
 
 export default class ResultComponent extends Component {
     render() {
         return (
             <div className="result_Container">
             <div className="head">
-            <i class="fas fa-check-circle"></i>
+            <FontAwesomeIcon icon={faCircleCheck} id='cir'></FontAwesomeIcon>
                 <h3>Result</h3>
             </div>
             <div className="body">
